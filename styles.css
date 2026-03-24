@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.glass-container {
+    background: #ffffff;
+
+    border-radius: 30px;
+    max-width: 500px;
+    width: 90%;
+    
+   
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    color: #d35400; 
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-warning {
+    background-color: #e67e22;
+    border: none;
+    transition: transform 0.2s;
+}
+
+.btn-warning:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}

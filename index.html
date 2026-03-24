@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Safety Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100">
+
+    <div class="glass-container p-5 text-center shadow-lg">
+        <h1 class="mb-4">Summer Safety Checker</h1>
+        <p class="text-muted">Stay safe by checking the local heat index before heading out.</p>
+    
+        <hr>
+
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-8">
+                <label for="tempInput" class="form-label fw-bold">Air Temperature (°C)</label>
+                <input type="number" id="tempInput" class="form-control form-control-lg text-center" placeholder="e.g. 30">
+            </div>
+            <div class="col-md-8">
+                <label for="humidityInput" class="form-label fw-bold">Relative Humidity (%)</label>
+                <input type="number" id="humidityInput" class="form-control form-control-lg text-center" placeholder="e.g. 60">
+            </div>
+            <div class="col-12 mt-4">
+                <button onclick="calculateHeatIndex()" class="btn btn-warning btn-lg px-5 fw-bold text-white">Analyze Air</button>
+            </div>
+        </div>
+
+        <div class="mt-5 small">
+            <p>Data provided by <a href="https://www.pagasa.dost.gov.ph/" target="_blank">PAGASA</a></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html> 
